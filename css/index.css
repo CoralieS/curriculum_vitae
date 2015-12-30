@@ -1,0 +1,30 @@
+/* Penser aux typos */
+
+body {
+  background: url("../img/lettres2_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;    
+}
+
+#bloc_page{
+    width: 900px;
+    margin: auto;
+}
+
+h1 {
+    font-size: bold;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: normal;
+    font-weight: 2em;
+    text-align: center;
+    color: white;
+}
+
+.menu_nav {
+    position: relative;
+    display: inline-block;
+}
