@@ -32,7 +32,7 @@ header h1 {
     color: blanchedalmond;
 }
 
-header h2{
+header h2 {
     font-family: 'Poiret One', cursive;
     font-style: italic;
     font-size: 1.4em;
@@ -40,9 +40,17 @@ header h2{
     color: bisque;
 }
 
+.retour {
+    float: left;
+    margin-top: -110px;
+    margin-left: -90px;
+}
+
 .menu_nav {
     position: relative;
     display: inline-block;
+    height: 110px;
+    margin: 0 30px 0 30px
 }
 
 li {
@@ -68,13 +76,14 @@ a.current {
    color: #D2002A;
 }
 
-/* Content */
+/* Coralie */
 
 .coralie_content {
     width: 900px;
-    height: 500px; 
+    height: 350px; 
     background: linear-gradient(0deg,rgba(222,184, 135,0.7),rgba(222,184,135,0.7));
     border-radius: 70px;
+    margin-bottom: 30px;
 }
 
 .coralie_content h1 {
@@ -86,6 +95,33 @@ a.current {
 }
 
 .coralie_content p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+
+/* Portfolio */
+
+.projet {
+    display: inline-block;
+    width: 900px;
+    height: 300px; 
+    background: linear-gradient(0deg,rgba(222,184, 135,0.7),rgba(222,184,135,0.7));
+    border-radius: 70px;
+    margin-bottom: 30px;
+}
+
+.projet h1 {
+    font-family: 'Poiret One', cursive;
+    font-style: italic;
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.projet p {
     font-family: 'Open Sans Condensed', sans-serif;
     font-style: normal;
     font-size: 1.1em;

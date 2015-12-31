@@ -2,11 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/contact.css">
-    
-    <!-- 
-    <link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'> 
-    typo --> 
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     
     <title>Coralie Sylvestre</title>
 </head>
@@ -16,63 +14,56 @@
   <!-- Header avec menu_nav -->
   
   
-   <!--<img class="fond" src="img/lettres.jpg" alt="fond_de_page">-->
-  
   <div id="bloc_page">
-      
   
-	<header>
-
+  <header>
+  
     <div>
       <h1 id="titreprincipal">Coralie Sylvestre</h1>
-      <h2 id="titresecondaire">Code your life</h2>
+      <h2 id="titresecondaire">{{ % Code your life % }}</h2>
     </div>
-	
-		
-		
-	<nav>
-	
+
+    <div class="retour"><a href="index.html">Accueil</a></div>
+    
+  <nav>
+  
     <div class="menu_nav">
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="coralie.html">Coralie</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://www.linkedin.com/in/coraliesylvestre">Linkedin</a></li>
-        <li><a href="https://github.com/CoralieS">GitHub</a></li>
+        <li><a href="coralie.html">{{Coralie}}</a></li>
+        <li><a href="portfolio.html">{{Portfolio}}</a></li>
+        <li><a href="contact.html" class="current">{{Contact}}</a></li>
+        <li><a href="https://www.linkedin.com/in/coraliesylvestre" target="_blank">{{Linkedin}}</a></li>
+        <li><a href="https://github.com/CoralieS" target="_blank">{{GitHub}}</a></li>
       </ul>
     </div>
         
-  </nav>
-	
-	</header>
+    </nav>
+  
+  </header>
 
 
   <!-- Content --> 
     
-    <form class="coralie_contact">
-      <div class="form-group has-success has-feedback">
-        <label class="control-label col-sm-3" for="inputSuccess3">Nom</label>
-          <div class="col-sm-9">
-          <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
-          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-          <span id="inputSuccess3Status" class="sr-only">(success)</span>
-          </div>
+    <form class="coralie_contact_base">
+
+      <div class="about_you">
+        <label class="info" for="nom">Votre nom</label><input type="text" name="nom" id="nom" required>
+        <label class="info" for="nom">Votre prénom</label><input type="text" name="prenom" id="prenom" required>
       </div>
 
-      <div class="form-group has-success has-feedback">
-        <label class="control-label col-sm-3" for="inputGroupSuccess2">Prénom</label>
-          <div class="col-sm-9">
-            <div class="input-group">
-              <span class="input-group-addon">@</span>
-              <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
-            </div>
-            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-            <span id="inputGroupSuccess2Status" class="sr-only">(success)</span>
-          </div>
-      </div>
+      <div class="about_firm">
+        <label class="info_contact" for="email">Votre email</label><input type="text" name="email" id="email" required>
+        <label class="info_contact" for="firm">Votre entreprise</label><input type="text" name="firm" id="firm" required>   
+      </div>              
 
-      
+      <div class="about_message">
+        <label class="message" for="message">Votre message</label><textarea name="message" rows="10" cols="50" id="message" required></textarea>
+      </div>             
+
+      <div class="about_submit">
+        <input type="submit" name="Envoyer">
+      </div>
+    
     </form>
 	
         
