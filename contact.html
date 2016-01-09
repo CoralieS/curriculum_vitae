@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
@@ -23,13 +24,16 @@
       <h2 id="titresecondaire">{{ % Code your life % }}</h2>
     </div>
 
-    <div class="retour"><a href="index.html">Accueil</a></div>
-    
+    <div class="retour">
+      <a href="index.html"><img src="img/home.jpg" alt="Accueil"></a>
+    </div>
+
   <nav>
   
     <div class="menu_nav">
       <ul>
         <li><a href="coralie.html">{{Coralie}}</a></li>
+        <li><a href="competences.html">{{Compétences}}</a></li>
         <li><a href="portfolio.html">{{Portfolio}}</a></li>
         <li><a href="contact.html" class="current">{{Contact}}</a></li>
         <li><a href="https://www.linkedin.com/in/coraliesylvestre" target="_blank">{{Linkedin}}</a></li>
@@ -44,27 +48,9 @@
 
   <!-- Content --> 
     
-    <form class="coralie_contact_base">
-
-      <div class="about_you">
-        <label class="info" for="nom">Votre nom</label><input type="text" name="nom" id="nom" required>
-        <label class="info" for="nom">Votre prénom</label><input type="text" name="prenom" id="prenom" required>
-      </div>
-
-      <div class="about_firm">
-        <label class="info_contact" for="email">Votre email</label><input type="text" name="email" id="email" required>
-        <label class="info_contact" for="firm">Votre entreprise</label><input type="text" name="firm" id="firm" required>   
-      </div>              
-
-      <div class="about_message">
-        <label class="message" for="message">Votre message</label><textarea name="message" rows="10" cols="50" id="message" required></textarea>
-      </div>             
-
-      <div class="about_submit">
-        <input type="submit" name="Envoyer">
-      </div>
-    
-    </form>
+    <div class="contact">
+      <a href=""><img src="img/home.jpg" alt="contact_coralie"></a>
+    </div>
 	
         
 </div>

@@ -44,13 +44,14 @@ header h2 {
     float: left;
     margin-top: -110px;
     margin-left: -90px;
+    background-image: url("../img/home.svg") no-repeat;
 }
 
 .menu_nav {
     position: relative;
     display: inline-block;
     height: 110px;
-    margin: 0 30px 0 30px
+    margin: 0px -20px 0px -20px;
 }
 
 li {
@@ -95,6 +96,32 @@ a.current {
 }
 
 .coralie_content p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+
+/* Compétences */
+
+.coralie_skills {
+    width: 900px;
+    height: 350px; 
+    background: linear-gradient(0deg,rgba(222,184, 135,0.7),rgba(222,184,135,0.7));
+    border-radius: 70px;
+    margin-bottom: 30px;
+}
+
+.coralie_skills h1 {
+    font-family: 'Poiret One', cursive;
+    font-style: italic;
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.coralie_skills ul {
     font-family: 'Open Sans Condensed', sans-serif;
     font-style: normal;
     font-size: 1em;
