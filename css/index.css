@@ -10,7 +10,7 @@
 /* Body image */
 
 body {
-  background: linear-gradient(0deg,rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url("../img/lettres2_2.jpg") no-repeat center fixed;
+  background: linear-gradient(0deg,rgba(255,255,255,0.3),rgba(255,255,255,0.3)),url("../img/lettres2_2.jpg") no-repeat center fixed;
   -webkit-background-size: cover;    
 }
 
@@ -26,6 +26,7 @@ body {
 header h1 {
     font-family: 'Poiret One', cursive;
     font-style: bold;
+    font-weight: bold;
     font-size: 3em;
     text-align: center;
     padding-top: 20px;
@@ -35,6 +36,7 @@ header h1 {
 header h2 {
     font-family: 'Poiret One', cursive;
     font-style: italic;
+    font-weight: bold;
     font-size: 1.4em;
     text-align: center;
     color: bisque;
@@ -73,6 +75,10 @@ a:hover {
    color: #D2002A;
 }
 
+a:visited {
+    color: none;
+}
+
 a.current {
    color: #D2002A;
 }
@@ -91,8 +97,10 @@ a.current {
     font-family: 'Poiret One', cursive;
     font-style: italic;
     font-size: 1.4em;
+    font-weight: bold;
     text-align: center;
     padding-top: 10px;
+    color: black;
 }
 
 .coralie_content p {
@@ -101,6 +109,7 @@ a.current {
     font-size: 1em;
     text-align: center;
     margin: 0 10px 0 10px;
+    color: black;
 }
 
 /* Compétences */
@@ -117,16 +126,20 @@ a.current {
     font-family: 'Poiret One', cursive;
     font-style: italic;
     font-size: 1.4em;
+    font-weight: bold;
     text-align: center;
     padding-top: 10px;
+    color: black;
 }
 
 .coralie_skills ul {
     font-family: 'Open Sans Condensed', sans-serif;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
-    margin: 0 10px 0 10px;
+    margin: 0;
+    padding: 0;
+    color: black;
 }
 
 /* Portfolio */
@@ -144,8 +157,10 @@ a.current {
     font-family: 'Poiret One', cursive;
     font-style: italic;
     font-size: 1.4em;
+    font-weight: bold;
     text-align: center;
     padding-top: 10px;
+    color: black;
 }
 
 .projet p {
@@ -155,4 +170,46 @@ a.current {
     text-align: center;
     padding-top: 10px;
     margin: 0 10px 0 10px;
+    color: black;
 }
+
+/* Contact */
+
+.coralie_contact {
+    width: 900px;
+    height: 250px; 
+    background: linear-gradient(0deg,rgba(222,184, 135,0.7),rgba(222,184,135,0.7));
+    border-radius: 70px;
+    margin-bottom: 30px;
+}
+
+.coralie_contact h1 {
+    font-family: 'Poiret One', cursive;
+    font-style: italic;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+}
+
+.coralie_contact h2 {
+    font-family: 'Poiret One', cursive;
+    font-style: normal;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    color: black;
+}
+
+.coralie_contact p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: bold;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    color: black;
+}
+
+/* MediaQueries */
