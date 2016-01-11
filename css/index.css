@@ -100,7 +100,7 @@ a:hover {
 }
 
 a:visited {
-    color: none;
+    color: black;
 }
 
 a.current {
